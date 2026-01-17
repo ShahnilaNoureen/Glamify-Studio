@@ -222,7 +222,7 @@ function Blog() {
           </div>
         </motion.div>
 
-        <hr className="border-white border-1 md:border-2 mb-8 md:mb-12" />
+        <hr className="border-white border md:border-2 mb-8 md:mb-12" />
 
         <motion.div
           initial={{ opacity: 0, y: 100 }}

@@ -9,6 +9,8 @@ import img3 from "../assets/img3.avif";
 import img4 from "../assets/img4.avif";
 import img5 from "../assets/img5.avif";
 import img6 from "../assets/img6.avif";
+import { Link } from "react-router-dom";
+
 
 function About() {
   const slideIn = {
@@ -24,7 +26,7 @@ function About() {
 
   return (
     <>
-      <div className="relative h-[400px] md:h-150 w-full overflow-hidden bg-black text-white font-sans">
+      <div className="relative h-100 md:h-150 w-full overflow-hidden bg-black text-white font-sans">
         <div className="absolute inset-0">
           <img
             src={title2}
@@ -54,7 +56,7 @@ function About() {
           duration: 1,
           ease: "easeOut",
         }}
-        className="bg-[#FAF3EF] py-12 md:py-24 px-4 md:px-6 text-center flex flex-col items-center justify-center min-h-[300px] md:min-h-100 font-sans"
+        className="bg-[#FAF3EF] py-12 md:py-24 px-4 md:px-6 text-center flex flex-col items-center justify-center min-h-75 md:min-h-100 font-sans"
       >
         <div className="inline-block border-y border-black py-1 mb-6 md:mb-10">
           <p className="text-xs md:text-sm uppercase tracking-[0.3em] md:tracking-[0.5em] text-black font-medium px-4">
@@ -85,7 +87,7 @@ function About() {
         </div>
       </motion.section>
 
-      <section className="grid grid-cols-1 md:grid-cols-2 min-h-[600px] md:min-h-150 border-b border-black">
+      <section className="grid grid-cols-1 md:grid-cols-2 min-h-150 md:min-h-150 border-b border-black">
         <div className="bg-[#F5E1D3] p-6 md:p-10 lg:p-20 flex flex-col justify-center items-start">
           <motion.div
             initial={{ opacity: 0, y: 100 }}
@@ -157,7 +159,7 @@ function About() {
           </motion.div>
         </div>
 
-        <div className="relative h-[400px] md:h-full min-h-[400px] md:min-h-100">
+        <div className="relative h-100 md:h-full min-h-100 md:min-h-100">
           <img
             src={about1}
             alt="Glamify Founders Style"
@@ -379,15 +381,15 @@ function About() {
           >
             <button
               onClick={() => window.open("https://www.fresha.com/for-business", "_blank", "noopener,noreferrer")}
-              className="border-[2px] sm:border-[3px] border-black bg-white px-4 sm:px-8 py-3 text-base sm:text-lg font-bold uppercase tracking-wide hover:bg-black hover:text-white transition-colors duration-300"
+              className="border-2 sm:border-[3px] border-black bg-white px-4 sm:px-8 py-3 text-base sm:text-lg font-bold uppercase tracking-wide hover:bg-black hover:text-white transition-colors duration-300"
             >
               Book an Appointment
             </button>
             <button
-              onClick={() => (window.location.href = "/Service")}
-              className="border-[2px] sm:border-[3px] border-black bg-white px-4 sm:px-8 py-3 text-base sm:text-lg font-bold uppercase tracking-wide hover:bg-black hover:text-white transition-colors duration-300"
+             
+              className="border2 sm:border-[3px] border-black bg-white px-4 sm:px-8 py-3 text-base sm:text-lg font-bold uppercase tracking-wide hover:bg-black hover:text-white transition-colors duration-300"
             >
-              Browse Services
+              <Link to="/Service">Browse Services</Link>
             </button>
           </motion.div>
         </section>
@@ -429,7 +431,7 @@ function About() {
           </div>
         </motion.div>
 
-        <hr className="border-white border-1 md:border-2 mb-8 md:mb-12" />
+        <hr className="border-white border md:border-2 mb-8 md:mb-12" />
 
         <motion.div
           initial={{ opacity: 0, y: 100 }}

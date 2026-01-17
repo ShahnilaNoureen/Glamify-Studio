@@ -21,6 +21,8 @@ import pic11 from "../assets/pic11.avif";
 import pic12 from "../assets/pic12.avif";
 import title from "../assets/title.avif";
 import Marquee from "react-fast-marquee";
+import { Link } from "react-router-dom";
+
 
 function Service() {
   const slideIn = {
@@ -59,7 +61,7 @@ function Service() {
   return (
     <>
       {/* Hero Section */}
-      <div className="relative h-[400px] md:h-150 w-full overflow-hidden bg-black text-white font-sans">
+      <div className="relative h-100 md:h-150 w-full overflow-hidden bg-black text-white font-sans">
         <div className="absolute inset-0">
           <img
             src={title4}
@@ -90,7 +92,7 @@ function Service() {
           duration: 1,
           ease: "easeOut",
         }}
-        className="bg-white py-12 md:py-24 px-4 md:px-6 text-center flex flex-col items-center justify-center min-h-[300px] md:min-h-100 font-sans"
+        className="bg-white py-12 md:py-24 px-4 md:px-6 text-center flex flex-col items-center justify-center min-h-75md:min-h-100 font-sans"
       >
         <div className="inline-block border-y border-black py-1 mb-6 md:mb-10">
           <p className="text-xs md:text-sm uppercase tracking-[0.3em] md:tracking-[0.5em] text-black font-medium px-2 md:px-4">
@@ -153,7 +155,7 @@ function Service() {
             Book Now
           </button>
         </motion.div>
-        <div className="h-[300px] md:h-full md:min-h-125">
+        <div className="h-75md:h-full md:min-h-125">
           <img src={service1} className="w-full h-full object-cover" alt="Hair Service" />
         </div>
       </section>
@@ -168,7 +170,7 @@ function Service() {
           duration: 1,
           ease: "easeOut",
         }}
-        className="bg-white py-12 md:py-24 px-4 md:px-6 text-center flex flex-col items-center justify-center min-h-[300px] md:min-h-100 font-sans"
+        className="bg-white py-12 md:py-24 px-4 md:px-6 text-center flex flex-col items-center justify-center min-h-75md:min-h-100 font-sans"
       >
         <div className="inline-block border-y border-black py-1 mb-6 md:mb-10">
           <p className="text-xs md:text-sm uppercase tracking-[0.3em] md:tracking-[0.5em] text-black font-medium px-2 md:px-4">
@@ -199,7 +201,7 @@ function Service() {
 
       {/* Nails Pricing Section */}
       <section className="grid grid-cols-1 md:grid-cols-2 items-center h-auto md:h-170">
-        <div className="h-[300px] md:h-full md:min-h-125 order-2 md:order-1">
+        <div className="h-75md:h-full md:min-h-125 order-2 md:order-1">
           <img src={service2} className="w-full h-full object-cover" alt="Nail Service" />
         </div>
         <motion.div
@@ -244,7 +246,7 @@ function Service() {
           duration: 1,
           ease: "easeOut",
         }}
-        className="bg-white py-12 md:py-24 px-4 md:px-6 text-center flex flex-col items-center justify-center min-h-[300px] md:min-h-100 font-sans"
+        className="bg-white py-12 md:py-24 px-4 md:px-6 text-center flex flex-col items-center justify-center min-h-75md:min-h-100 font-sans"
       >
         <div className="inline-block border-y border-black py-1 mb-6 md:mb-10">
           <p className="text-xs md:text-sm uppercase tracking-[0.3em] md:tracking-[0.5em] text-black font-medium px-2 md:px-4">
@@ -302,7 +304,7 @@ function Service() {
             Book Now
           </button>
         </motion.div>
-        <div className="h-[300px] md:h-full md:min-h-125">
+        <div className="h-75 md:h-full md:min-h-125">
           <img src={service3} className="w-full h-full object-cover" alt="Makeup Service" />
         </div>
       </section>
@@ -532,15 +534,15 @@ function Service() {
           >
             <button
               onClick={() => window.open("https://www.fresha.com/for-business", "_blank", "noopener,noreferrer")}
-              className="border-[2px] sm:border-[3px] border-black bg-white px-4 sm:px-8 py-3 text-base sm:text-lg font-bold uppercase tracking-wide hover:bg-black hover:text-white transition-colors duration-300"
+              className="border-2 sm:border-[3px] border-black bg-white px-4 sm:px-8 py-3 text-base sm:text-lg font-bold uppercase tracking-wide hover:bg-black hover:text-white transition-colors duration-300"
             >
               Book an Appointment
             </button>
             <button
-              onClick={() => (window.location.href = "/Service")}
-              className="border-[2px] sm:border-[3px] border-black bg-white px-4 sm:px-8 py-3 text-base sm:text-lg font-bold uppercase tracking-wide hover:bg-black hover:text-white transition-colors duration-300"
+             
+              className="border-2 sm:border-[3px] border-black bg-white px-4 sm:px-8 py-3 text-base sm:text-lg font-bold uppercase tracking-wide hover:bg-black hover:text-white transition-colors duration-300"
             >
-              Browse Services
+              <Link to="/Service">Browse Services</Link>
             </button>
           </motion.div>
         </section>
@@ -656,7 +658,7 @@ function Service() {
           </motion.div>
         </div>
 
-        <div className="relative h-[400px] md:h-auto w-full bg-gray-200 overflow-hidden border-t md:border-l border-black">
+        <div className="relative h-100 md:h-auto w-full bg-gray-200 overflow-hidden border-t md:border-l border-black">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3023.0454069207485!2d-73.99040588954136!3d40.73902637127019!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259a171f28d43%3A0x3cdaa25ac68bc20a!2s260%20E%2021st%20St%2C%20New%20York%2C%20NY%2010010%2C%20USA!5e0!3m2!1sen!2s!4v1768459918938!5m2!1sen!2s"
             className="w-full h-full sepia-30 saturate-60 brightness-95 contrast-90"
@@ -770,7 +772,7 @@ function Service() {
           </div>
         </motion.div>
 
-        <hr className="border-white border-1 md:border-2 mb-8 md:mb-12" />
+        <hr className="border-white border md:border-2 mb-8 md:mb-12" />
 
         <motion.div
           initial={{ opacity: 0, y: 100 }}

@@ -2,6 +2,8 @@ import React from "react";
 import "../App.css";
 import { motion } from "framer-motion";
 import Marquee from "react-fast-marquee";
+import { Link } from "react-router-dom";
+
 
 /* 🔹 ALL ASSETS – SAME */
 import title from "../assets/title.avif";
@@ -140,10 +142,10 @@ function Home() {
         </div>
 
         <a
-          href="/About"
+       
           className="inline-block border-2 md:border-4 border-black px-4 sm:px-6 md:px-7 py-2 md:py-4 text-lg sm:text-xl md:text-2xl font-bold uppercase tracking-tight hover:bg-black hover:text-white transition-colors duration-300"
         >
-          About Us
+         <Link to="/About">About</Link>
         </a>
       </motion.section>
 
@@ -545,10 +547,10 @@ function Home() {
               Book an Appointment
             </button>
             <button
-              onClick={() =>(window.location.href="/Service")}
+         
               className="border-2 md:border-[3px] border-black bg-white px-4 sm:px-6 md:px-8 py-3 text-base sm:text-lg font-bold uppercase tracking-wide hover:bg-black hover:text-white transition-colors duration-300"
             >
-              Browse Services
+              <Link to="/Service">Browse Services</Link>
             </button>
           </motion.div>
         </section>

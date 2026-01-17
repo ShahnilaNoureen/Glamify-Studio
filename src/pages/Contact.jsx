@@ -2,7 +2,9 @@ import React from 'react';
 import { motion } from 'framer-motion'; 
 import title5 from "../assets/title5.avif";
 import Marquee from "react-fast-marquee";
-import { useState } from "react"
+import { useState } from "react";
+import { Link } from "react-router-dom";
+
 
 function Contact() {
   const faqs = [
@@ -320,10 +322,10 @@ function Contact() {
               Book an Appointment
             </button>
             <button
-              onClick={() => (window.location.href = "/Service")}
+              
               className="border-2 sm:border-[3px] border-black bg-white px-4 sm:px-8 py-3 text-base sm:text-lg font-bold uppercase tracking-wide hover:bg-black hover:text-white transition-colors duration-300"
             >
-              Browse Services
+               <Link to="/Service">Browse Services</Link>
             </button>
           </motion.div>
         </section>
