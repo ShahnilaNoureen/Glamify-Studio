@@ -269,14 +269,7 @@ function About() {
               <h2 className="relative z-10 text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black uppercase tracking-tighter text-black">
                 our experts
               </h2>
-              <motion.div
-                variants={slideIn.left}
-                initial="hidden"
-                whileInView="visible"
-                viewport={{ once: true, amount: 0.3 }}
-                transition={{ duration: 0.7, ease: "easeout" }}
-                className="absolute bottom-0 left-1/2 transform -translate-x-1/2 md:left-0 md:transform-none md:ml-115 w-1/2 md:w-1/3 h-1/3 bg-[#FF99E2] z-0 translate-y-1"
-              ></motion.div>
+             
             </div>
           </motion.div>
 
@@ -445,14 +438,34 @@ function About() {
           className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 md:gap-12 mb-8 md:mb-16"
         >
           <div>
-            <h4 className="font-bold mb-4 md:mb-6 text-sm uppercase tracking-wide">Pages</h4>
-            <ul className="space-y-3 md:space-y-4 text-sm text-gray-300">
-              <li><a href="/Service" className="hover:text-white transition-colors">Services</a></li>
-              <li><a href="/About" className="hover:text-white transition-colors">About</a></li>
-              <li><a href="/Contact" className="hover:text-white transition-colors">Contact</a></li>
-              <li><a href="/Blog" className="hover:text-white transition-colors">Blog</a></li>
-            </ul>
-          </div>
+  <h4 className="font-bold mb-4 md:mb-6 text-sm uppercase tracking-wide">
+    Pages
+  </h4>
+
+  <ul className="space-y-3 md:space-y-4 text-sm text-gray-300">
+    <li>
+      <Link to="/Service" className="hover:text-white transition-colors">
+        Services
+      </Link>
+    </li>
+    <li>
+      <Link to="/About" className="hover:text-white transition-colors">
+        About
+      </Link>
+    </li>
+    <li>
+      <Link to="/Contact" className="hover:text-white transition-colors">
+        Contact
+      </Link>
+    </li>
+    <li>
+      <Link to="/Blog" className="hover:text-white transition-colors">
+        Blog
+      </Link>
+    </li>
+  </ul>
+</div>
+
 
           <div>
             <h4 className="font-bold mb-4 md:mb-6 text-sm uppercase tracking-wide">Contact</h4>

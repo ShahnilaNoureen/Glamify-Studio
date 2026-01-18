@@ -792,14 +792,34 @@ function Home() {
           className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 md:gap-12 mb-8 md:mb-16"
         >
           <div>
-            <h4 className="font-bold mb-4 md:mb-6 text-sm uppercase tracking-wide">Pages</h4>
-            <ul className="space-y-3 md:space-y-4 text-sm text-gray-300">
-              <li><a href="/Service" className="hover:text-white transition-colors">Services</a></li>
-              <li><a href="/About" className="hover:text-white transition-colors">About</a></li>
-              <li><a href="/Contact" className="hover:text-white transition-colors">Contact</a></li>
-              <li><a href="/Blog" className="hover:text-white transition-colors">Blog</a></li>
-            </ul>
-          </div>
+  <h4 className="font-bold mb-4 md:mb-6 text-sm uppercase tracking-wide">
+    Pages
+  </h4>
+
+  <ul className="space-y-3 md:space-y-4 text-sm text-gray-300">
+    <li>
+      <Link to="/Service" className="hover:text-white transition-colors">
+        Services
+      </Link>
+    </li>
+    <li>
+      <Link to="/About" className="hover:text-white transition-colors">
+        About
+      </Link>
+    </li>
+    <li>
+      <Link to="/Contact" className="hover:text-white transition-colors">
+        Contact
+      </Link>
+    </li>
+    <li>
+      <Link to="/Blog" className="hover:text-white transition-colors">
+        Blog
+      </Link>
+    </li>
+  </ul>
+</div>
+
 
           <div>
             <h4 className="font-bold mb-4 md:mb-6 text-sm uppercase tracking-wide">Contact</h4>

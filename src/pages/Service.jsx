@@ -24,6 +24,8 @@ import Marquee from "react-fast-marquee";
 import { Link } from "react-router-dom";
 
 
+
+
 function Service() {
   const slideIn = {
     left: {
@@ -83,7 +85,10 @@ function Service() {
       </div>
 
       {/* Hair Services Section */}
-      <motion.section
+      <section
+        className="bg-white py-12 md:py-24 px-4 md:px-6 text-center flex flex-col items-center justify-center min-h-75 md:min-h-100 font-sans"
+      >
+        <motion.div
         initial={{ opacity: 0, y: 100 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, amount: 0.3 }}
@@ -91,16 +96,21 @@ function Service() {
           delay: 0.2,
           duration: 1,
           ease: "easeOut",
-        }}
-        className="bg-white py-12 md:py-24 px-4 md:px-6 text-center flex flex-col items-center justify-center min-h-75md:min-h-100 font-sans"
-      >
-        <div className="inline-block border-y border-black py-1 mb-6 md:mb-10">
+        }} className="inline-block border-y border-black py-1 mb-6 md:mb-10">
           <p className="text-xs md:text-sm uppercase tracking-[0.3em] md:tracking-[0.5em] text-black font-medium px-2 md:px-4">
             CLASSY AND TRENDY
           </p>
-        </div>
+        </motion.div>
 
-        <div className="relative mb-6 md:mb-8">
+        <motion.div
+        initial={{ opacity: 0, y: 100 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, amount: 0.3 }}
+        transition={{
+          delay: 0.2,
+          duration: 1,
+          ease: "easeOut",
+        }} className="relative mb-6 md:mb-8">
           <h2 className="relative z-10 text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black uppercase tracking-tighter text-black">
             hair
           </h2>
@@ -112,14 +122,22 @@ function Service() {
             transition={{ duration: 0.4, ease: "easeout" }}
             className="absolute bottom-0 left-0 w-full h-1/3 bg-[#FF99E2] z-0 translate-y-1"
           ></motion.div>
-        </div>
+        </motion.div>
 
-        <div className="max-w-3xl mx-auto px-4">
+        <motion.div
+        initial={{ opacity: 0, y: 100 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, amount: 0.3 }}
+        transition={{
+          delay: 0.2,
+          duration: 1,
+          ease: "easeOut",
+        }} className="max-w-3xl mx-auto px-4">
           <p className="text-base sm:text-lg md:text-xl text-gray-800 leading-relaxed font-medium">
             Glamify provides a range of hair treatments tailored to individual needs. Customers are encouraged to call for personalized consultations, ensuring the best-suited options. The salon prioritizes quality, incorporating ethical ingredients, and stays abreast of industry trends.
           </p>
-        </div>
-      </motion.section>
+        </motion.div>
+      </section>
 
       {/* Hair Pricing Section */}
       <section className="grid grid-cols-1 md:grid-cols-2 items-center">
@@ -155,13 +173,17 @@ function Service() {
             Book Now
           </button>
         </motion.div>
-        <div className="h-75md:h-full md:min-h-125">
+
+
+        <div className="h-75 md:h-full md:min-h-125">
           <img src={service1} className="w-full h-full object-cover" alt="Hair Service" />
         </div>
       </section>
 
       {/* Nails Services Section */}
-      <motion.section
+      <section  className="bg-white py-12 md:py-24  px-4 md:px-6 text-center flex flex-col items-center justify-center min-h-75 md:min-h-100 font-sans"
+>
+        <motion.div
         initial={{ opacity: 0, y: 100 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, amount: 0.3 }}
@@ -169,16 +191,21 @@ function Service() {
           delay: 0.2,
           duration: 1,
           ease: "easeOut",
-        }}
-        className="bg-white py-12 md:py-24 px-4 md:px-6 text-center flex flex-col items-center justify-center min-h-75md:min-h-100 font-sans"
-      >
-        <div className="inline-block border-y border-black py-1 mb-6 md:mb-10">
+        }} className="inline-block border-y border-black py-1 mb-6 md:mb-10">
           <p className="text-xs md:text-sm uppercase tracking-[0.3em] md:tracking-[0.5em] text-black font-medium px-2 md:px-4">
             NEW TECHNIQUES
           </p>
-        </div>
+        </motion.div>
 
-        <div className="relative mb-6 md:mb-8">
+        <motion.div
+        initial={{ opacity: 0, y: 100 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, amount: 0.3 }}
+        transition={{
+          delay: 0.2,
+          duration: 1,
+          ease: "easeOut",
+        }}className="relative mb-6 md:mb-8">
           <h2 className="relative z-10 text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black uppercase tracking-tighter text-black">
             nails
           </h2>
@@ -190,20 +217,30 @@ function Service() {
             transition={{ duration: 0.4, ease: "easeout" }}
             className="absolute bottom-0 left-0 w-full h-1/3 bg-[#FF99E2] z-0 translate-y-1"
           ></motion.div>
-        </div>
+        </motion.div>
 
-        <div className="max-w-3xl mx-auto px-4">
+        <motion.div
+        initial={{ opacity: 0, y: 100 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, amount: 0.3 }}
+        transition={{
+          delay: 0.2,
+          duration: 1,
+          ease: "easeOut",
+        }}className="max-w-3xl mx-auto px-4">
           <p className="text-base sm:text-lg md:text-xl text-gray-800 leading-relaxed font-medium">
             Glamify, the epitome of nail luxury, offers an array of treatments, from diverse gel nail services to artistic options. Elevate your nails with our modern beauty expertise.
           </p>
-        </div>
-      </motion.section>
+        </motion.div>
+      </section>
 
       {/* Nails Pricing Section */}
       <section className="grid grid-cols-1 md:grid-cols-2 items-center h-auto md:h-170">
-        <div className="h-75md:h-full md:min-h-125 order-2 md:order-1">
-          <img src={service2} className="w-full h-full object-cover" alt="Nail Service" />
+       
+        <div className="h-75 md:h-full md:min-h-125 order-2 md:order-1">
+          <img src={service2} className="w-full h-full object-cover" alt="Nail Service"/>
         </div>
+
         <motion.div
           initial={{ opacity: 0, y: 100 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -237,7 +274,11 @@ function Service() {
       </section>
 
       {/* Makeup Services Section */}
-      <motion.section
+      <section
+        
+        className="bg-white py-12 md:py-24 px-4 md:px-6 text-center flex flex-col items-center justify-center min-h-75 md:min-h-100 font-sans"
+      >
+        <motion.div 
         initial={{ opacity: 0, y: 100 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, amount: 0.3 }}
@@ -245,16 +286,21 @@ function Service() {
           delay: 0.2,
           duration: 1,
           ease: "easeOut",
-        }}
-        className="bg-white py-12 md:py-24 px-4 md:px-6 text-center flex flex-col items-center justify-center min-h-75md:min-h-100 font-sans"
-      >
-        <div className="inline-block border-y border-black py-1 mb-6 md:mb-10">
+        }} className="inline-block border-y border-black py-1 mb-6 md:mb-10">
           <p className="text-xs md:text-sm uppercase tracking-[0.3em] md:tracking-[0.5em] text-black font-medium px-2 md:px-4">
             DOLLIFY YOURSELF
           </p>
-        </div>
+        </motion.div>
 
-        <div className="relative mb-6 md:mb-8">
+        <motion.div
+        initial={{ opacity: 0, y: 100 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, amount: 0.3 }}
+        transition={{
+          delay: 0.2,
+          duration: 1,
+          ease: "easeOut",
+        }} className="relative mb-6 md:mb-8">
           <h2 className="relative z-10 text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black uppercase tracking-tighter text-black">
             MAKEUP
           </h2>
@@ -266,14 +312,22 @@ function Service() {
             transition={{ duration: 0.4, ease: "easeout" }}
             className="absolute bottom-0 left-0 w-full h-1/3 bg-[#FF99E2] z-0 translate-y-1"
           ></motion.div>
-        </div>
+        </motion.div>
 
-        <div className="max-w-3xl mx-auto px-4">
+        <motion.div
+        initial={{ opacity: 0, y: 100 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, amount: 0.3 }}
+        transition={{
+          delay: 0.2,
+          duration: 1,
+          ease: "easeOut",
+        }}className="max-w-3xl mx-auto px-4">
           <p className="text-base sm:text-lg md:text-xl text-gray-800 leading-relaxed font-medium">
             Dive into the allure of Glamify, where makeup artistry meets choice. We feature an array of top-notch products from leading brands, tailored to your unique needs. Call us for personalized recommendations; our focus is on ethically sourced, high-quality makeup, catering to diverse style preferences.
           </p>
-        </div>
-      </motion.section>
+        </motion.div>
+      </section>
 
       {/* Makeup Pricing Section */}
       <section className="grid grid-cols-1 md:grid-cols-2 items-center">
@@ -785,15 +839,35 @@ function Service() {
           }}
           className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 md:gap-12 mb-8 md:mb-16"
         >
-          <div>
-            <h4 className="font-bold mb-4 md:mb-6 text-sm uppercase tracking-wide">Pages</h4>
-            <ul className="space-y-3 md:space-y-4 text-sm text-gray-300">
-              <li><a href="/Service" className="hover:text-white transition-colors">Services</a></li>
-              <li><a href="/About" className="hover:text-white transition-colors">About</a></li>
-              <li><a href="/Contact" className="hover:text-white transition-colors">Contact</a></li>
-              <li><a href="/Blog" className="hover:text-white transition-colors">Blog</a></li>
-            </ul>
-          </div>
+        <div>
+  <h4 className="font-bold mb-4 md:mb-6 text-sm uppercase tracking-wide">
+    Pages
+  </h4>
+
+  <ul className="space-y-3 md:space-y-4 text-sm text-gray-300">
+    <li>
+      <Link to="/Service" className="hover:text-white transition-colors">
+        Services
+      </Link>
+    </li>
+    <li>
+      <Link to="/About" className="hover:text-white transition-colors">
+        About
+      </Link>
+    </li>
+    <li>
+      <Link to="/Contact" className="hover:text-white transition-colors">
+        Contact
+      </Link>
+    </li>
+    <li>
+      <Link to="/Blog" className="hover:text-white transition-colors">
+        Blog
+      </Link>
+    </li>
+  </ul>
+</div>
+
 
           <div>
             <h4 className="font-bold mb-4 md:mb-6 text-sm uppercase tracking-wide">Contact</h4>
